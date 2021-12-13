@@ -1,0 +1,260 @@
+h1 {
+    text-align: center;
+}
+
+.item {
+    display: inline-flex;
+    position: relative;
+    margin-right: 35px;
+    font-size: 20px;
+}
+
+#idti {
+    font-family: 'Lobster', serif;
+}
+
+.h1 {
+    font-family: poppins;
+    font-size: x-large;
+    text-shadow: 0px 2px 2px rgb(255, 0, 0);
+}
+
+.vemo {
+    
+    padding: 5px; 
+    /* display: flex;
+    flex-direction: column; */
+    background-color:  rgba(103, 151, 151, 0.288);
+    text-align: justify;
+    border-radius: 18px;
+    border: 4px double white;
+}
+ul{
+    
+    color: rgb(51, 48, 48);
+}
+
+.b {
+    color: rgb(143, 5, 5)
+}
+
+p {
+    text-align: justify;
+}
+.link_menu {
+    padding: 5px 10px;
+    text-align: center;
+    border: 0px solid #f00;
+    background: black;
+    text-decoration: solid;
+    margin-left: auto;
+    margin-right: auto;
+    color:#FFF;
+    /* cantos arredondados */
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    border-radius:5px;
+    display: block;
+    }
+  
+.body {
+    margin-left: auto;
+    margin-right: auto;
+    border: 10px dotted black;
+    padding: 50px 50px 50px 50px;
+    font-family: 'Cairo', sans-serif;
+    background-color: white;
+  
+}
+
+body {
+    padding: 50px 50px 50px 50px;
+    font-family: 'Cairo', sans-serif;
+    -webkit-animation: colorchange 21s infinite;
+    animation: colorchange 15s ease-in infinite;
+}
+
+@-webkit-keyframes colorchange {
+    0% {
+        background-color: rgb(223, 5, 5);
+    }
+    20% {
+        background-color: orange;
+    }
+    40% {
+        background-color: rgb(240, 240, 17);
+    }
+    60% {
+        background-color: green;
+    }
+    80% {
+        background-color: rgb(53, 53, 226);
+    }
+    90% {
+        background-color: rgb(123, 20, 197);
+    }
+    100% {
+        background-color: rgba(201, 68, 201, 0.808);
+    }
+}
+
+@keyframes colorchange {
+    0% {
+        background-color: rgb(223, 8, 8);
+    }
+    20% {
+        background-color: orange;
+    }
+    40% {
+        background-color: rgba(238, 238, 17, 0.959);
+    }
+    60% {
+        background-color: rgb(11, 129, 11);
+    }
+    80% {
+        background-color: rgb(52, 52, 241);
+    }
+    90% {
+        background-color: rgb(129, 64, 175);
+    }
+    100% {
+        background-color: rgba(204, 73, 204, 0.774);
+    }
+}
+
+.vi {
+    display: flex;
+}
+
+.outro {
+    text-align: justify;
+    padding: 0 5px 0 5px;
+}
+
+.grafic {
+    width: 100%; 
+    height: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.gra {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 250px;
+    height: 250px;
+    border-radius: 5px;
+}
+
+.boxVideo {
+    position: relative;
+    padding-bottom: 55.7%;
+     padding-top: 25px;
+    height: 0;
+    margin: 0 auto; 
+}
+
+.boxVideo iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+/*
+position: relative todos os elementos filhos vão se posicionar em relação a esse recipiente.
+padding-bottom: 56.25% foi utilizada para criar uma proporção dentro do elemento figure preenchendo a altura com esse valor.
+
+padding-top: 25px abre espaço para os controladores de vídeo.
+
+height: 0 para retirar qualquer altura do elemento.
+
+margin:0 auto para centralizar.
+
+width: 90% para definir a proporção ocupada pelo contêiner na tela.
+
+.boxVideo iframe recebe praticamente regras de posicionamento e dizemos que vai ocupar cem por cento da largura e altura do seu elemento pai.
+
+*/
+
+.roda {
+    color: darkturquoise;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    body{
+          display: flex; 
+          margin: 0;
+  
+    width: 193vw;
+   
+    flex-direction: column;
+    align-items: center;
+         
+         
+       
+
+        
+    }
+    .body{
+        display: flex;
+    flex-direction: column;
+    
+    }
+    .blocos {
+        flex-direction: column;
+        align-items: center;
+    }
+    .outro {
+        flex-direction: column;
+    }
+    .h1 {
+        display: inline-block;
+        font-size: 100%;
+    }
+    .item {
+        font-size: 100%;
+    }
+    p{
+        display: inline;
+        font-size: 30px;
+     
+    }
+    ul {
+        font-size: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    .indive {
+        height: auto;
+    }
+    .gra {
+        width: 100%;
+        height: 100%;
+    }
+    .vemo {
+        flex-direction: column;
+        font-size: 30px;
+        
+    }
+
+    div {
+        flex-direction: column;
+        font-size: 30px;
+    }
+    .vi {
+        flex-wrap: wrap;
+    }
+    .roda {
+        text-align: center;
+        display: inline;
+        font-size: 23px;
+    }
+    .boxVideo iframe {
+        width: 100%;
+        height: 100%;
+    }
+}
